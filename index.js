@@ -6,7 +6,9 @@ const port = process.env.PORT || 3000
 const indexRouter = require('./routes/index')
 const tabuadaRouter = require('./routes/tabuada')
 
+// Original:
 // app.use(express.static('public'))
+// Altere para:
 app.use(express.static(path.join(__dirname, 'public')))
 
 // view engine
